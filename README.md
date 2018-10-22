@@ -10,3 +10,9 @@ https://www.youtube.com/watch?v=7DgSSgjcaoc
 
 [Install Puppet Enterprise -- Start guide](https://puppet.com/docs/pe/2019.0/install_pe_getting_started.html#install-puppet-enterprise-quick-start-guide)
 
+
+## Glossary
+Repo policy - this is the way to create "rules" to install a new OS from an ISO file.
+
+E.g., 
+razor create-repo --name trusty --iso-url { THE URL } 
