@@ -43,8 +43,15 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 	* Run PostgresSQL: ```$ sudo -u postgres psql```
 	* create a user: ```postgres=# create user razor;```
 	* create a database: ```postgres=#  CREATE DATABASE razor_prd OWNER razor;```
+	* Edit file ```$ sudo nano /etc/postgresql/10/main/pg_hba.conf``` to remove password from Razor: local all razor_prd trust 
+	
+
+
 5.  Download Razor: ```wget https://apt.puppetlabs.com/puppet6-release-bionic.deb```
 6.  Install Razor: ```dpkg -i puppet6-release-bionic.deb```
 
 
+
+## Helpful links
+[PostgrestSQL user commands](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2)
 
