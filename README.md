@@ -29,7 +29,7 @@ Policy:
 razor create-policy --name trusty-default --repo trust --hostname '${id}.example.org' --root-password secrete --broker puppet-pe 
 
 
-# Tutorial 
+# Setup
 This toturial is a test enviroment setup with two VMs one will run the puppet server the other one will be used to install an OS using razor. 
 
 1. Download [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
@@ -39,6 +39,10 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 3. Configure the OS in the VM
 
 4. Install PostgreSQL:
+	* Download and install:
+	* ```$ sudo apt-get install postgresql-10```
+	* ```$ sudo -u postgres -i```
 	* create a database user (createuser -P razor) and a database (createdb -O razor razor_prd):
-	 ```$ sudo apt-get install postgresql-10```
+
+
 
