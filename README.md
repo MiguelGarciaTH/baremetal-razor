@@ -39,12 +39,12 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 3. Configure the OS in the VM
 
 4. Install PostgreSQL:
-	* Download and install:
-	* ```$ sudo apt-get install postgresql```
-	* ```$ sudo -u postgres psql```
+	* Download and install: ```$ sudo apt-get install postgresql```
+	* Run PostgresSQL: ```$ sudo -u postgres psql```
 	* create a user: ```postgres=# create user razor;```
 	* create a database: ```postgres=#  CREATE DATABASE razor_prd OWNER razor;```
-5.  Install Razor: ```$ sudo apt install razor```
+5.  Download Razor: ```wget https://apt.puppetlabs.com/puppet6-release-bionic.deb```
+6.  Install Razor: ```dpkg -i puppet6-release-bionic.deb```
 
 
 
