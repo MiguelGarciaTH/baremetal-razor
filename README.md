@@ -40,9 +40,11 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 
 4. Install PostgreSQL:
 	* Download and install:
-	* ```$ sudo apt-get install postgresql-10```
-	* ```$ sudo -u postgres -i```
-	* create a database user (createuser -P razor) and a database (createdb -O razor razor_prd):
+	* ```$ sudo apt-get install postgresql```
+	* ```$ sudo -u postgres psql```
+	* create a user: ```postgres=# create user razor;```
+	* create a database: ```postgres=#  CREATE DATABASE razor_prd OWNER razor;```
+5.  Install Razor: ```$ sudo apt install razor```
 
 
 
