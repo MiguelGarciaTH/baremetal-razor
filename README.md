@@ -36,5 +36,11 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 
 2. Download your favorite Linux 
 
+3. Configure the OS in the VM
 
+4. Install PostgreSQL:
+	* create a database user (createuser -P razor) and a database (createdb -O razor razor_prd)
+	```console
+$ sudo apt-get install postgresql-10
+```
 
