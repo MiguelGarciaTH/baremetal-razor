@@ -2,8 +2,9 @@
 Trying to build a controller on a Bare metal setting
 
 # Install
-1. Donwload Puppet Enterprise for your distribution [here](https://puppet.com/download-puppet-enterprise)
-	*  ```$ wget -O puppet-enterprise-2019.0.0-ubuntu-18.04-amd64.tar.gz "https://pm.puppet.com/cgi-bin/download.cgi?arch=amd64&dist=ubuntu&rel=18.04&ver=latest"```
+1. Donwload Puppet Enterprise for your distribution [here](https://puppet.com/download-puppet-enterprise):
+
+```$ wget -O puppet-enterprise-2019.0.0-ubuntu-18.04-amd64.tar.gz "https://pm.puppet.com/cgi-bin/download.cgi?arch=amd64&dist=ubuntu&rel=18.04&ver=latest"```
 
 
 *BELOW DEPRECATED*
