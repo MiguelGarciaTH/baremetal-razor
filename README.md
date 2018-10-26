@@ -19,29 +19,29 @@ admin / qKSHepQom85rTgFg
 
 
 ### supported OSes (guests)
-*Red Hat Enterprise Linux 
+* Red Hat Enterprise Linux 
 
-*CentOS
+* CentOS
 
-*Fedora
+* Fedora
 
-*Ubuntu
+* Ubuntu
 
-*Debian
+* Debian
 
-*Solaris 8, 10
+* Solaris 8, 10
 
-*OpenSUSE  
+* OpenSUSE  
 
-*SLES 
+* SLES 
 
-*Oracle Linux
+* Oracle Linux
 
-*CoreOS
+* CoreOS
 
-*FreeBSD
+* FreeBSD
 
-*Junos
+* Junos
 
 ## install 
 2. Change /etc/hosts and replace 127.0.0.1 for the real IP: 1.2.3.4 foreman.lasige.di.fc.ul.pt (full domain if needed). 
@@ -49,11 +49,11 @@ In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hos
 
 
 # Alternatives
-*[Coobler](http://cobbler.github.io/manuals/quickstart/)
+* [Coobler](http://cobbler.github.io/manuals/quickstart/)
 
-*[RackHD](https://github.com/rackhd/rackhd)(https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
+* [RackHD](https://github.com/rackhd/rackhd)(https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
 
-*[xCat](http://xcat.org/)
+* [xCat](http://xcat.org/)
 
 
 # *BELOW DEPRECATED*
