@@ -8,12 +8,12 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 1. Download [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
 2. Download your favorite Linux 
 3. Configure the OS in the VM it needs 4GB ram
-4. ...
+4. ... [instalation guide](https://www.theforeman.org/introduction.html)
 5. Change /etc/hosts and replace 127.0.0.1 for the real IP: 1.2.3.4 foreman.lasige.di.fc.ul.pt (full domain if needed). 
 In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hostname -f)```
 
 Follow these instructions: 
-https://www.theforeman.org/introduction.html
+
 admin / qKSHepQom85rTgFg
 
 
