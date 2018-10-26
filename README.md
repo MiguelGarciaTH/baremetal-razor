@@ -38,9 +38,9 @@ In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hos
 
 
 # Alternatives
-[Coobler](http://cobbler.github.io/manuals/quickstart/)
-[RackHD](https://github.com/rackhd/rackhd)(https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
-[xCat](http://xcat.org/)
+*[Coobler](http://cobbler.github.io/manuals/quickstart/)
+*[RackHD](https://github.com/rackhd/rackhd)(https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
+*[xCat](http://xcat.org/)
 
 
 # *BELOW DEPRECATED*
