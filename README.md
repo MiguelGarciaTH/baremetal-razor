@@ -20,16 +20,27 @@ admin / qKSHepQom85rTgFg
 
 ### supported OSes (guests)
 *Red Hat Enterprise Linux 
+
 *CentOS
+
 *Fedora
+
 *Ubuntu
+
 *Debian
+
 *Solaris 8, 10
+
 *OpenSUSE  
+
 *SLES 
+
 *Oracle Linux
+
 *CoreOS
+
 *FreeBSD
+
 *Junos
 
 ## install 
@@ -39,7 +50,9 @@ In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hos
 
 # Alternatives
 *[Coobler](http://cobbler.github.io/manuals/quickstart/)
+
 *[RackHD](https://github.com/rackhd/rackhd)(https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
+
 *[xCat](http://xcat.org/)
 
 
