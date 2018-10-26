@@ -1,5 +1,49 @@
-# baremetal-razor
+# baremetal-provisioning
 Trying to build a controller on a Bare metal setting
+
+# Foreman
+
+This toturial is a test enviroment setup with two VMs one will run the puppet server the other one will be used to install an OS using razor. 
+
+1. Download [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
+
+2. Download your favorite Linux 
+
+3. Configure the OS in the VM it needs 4GB ram
+
+4. 
+
+Follow these instructions: 
+https://www.theforeman.org/introduction.html
+admin / qKSHepQom85rTgFg
+
+
+### supported OSes (guests)
+*Red Hat Enterprise Linux 
+*CentOS
+*Fedora
+*Ubuntu
+*Debian
+*Solaris 8, 10
+*OpenSUSE  
+*SLES 
+*Oracle Linux
+*CoreOS
+*FreeBSD
+*Junos
+
+## install 
+2. Change /etc/hosts and replace 127.0.0.1 for the real IP: 1.2.3.4 foreman.lasige.di.fc.ul.pt (full domain if needed). 
+In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hostname -f)```
+
+
+# Alternatives
+[Coobler](http://cobbler.github.io/manuals/quickstart/)
+[RackHD](https://github.com/rackhd/rackhd)(https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
+[xCat](http://xcat.org/)
+
+
+# *BELOW DEPRECATED*
 
 # Install
 1. Donwload Puppet Enterprise for your distribution [here](https://puppet.com/download-puppet-enterprise):
@@ -7,7 +51,6 @@ Trying to build a controller on a Bare metal setting
 ```$ wget -O puppet-enterprise-2019.0.0-ubuntu-18.04-amd64.tar.gz "https://pm.puppet.com/cgi-bin/download.cgi?arch=amd64&dist=ubuntu&rel=18.04&ver=latest"```
 
 
-*BELOW DEPRECATED*
 ## Useful links:
 Overview 
 https://puppet.com/docs/pe/2019.0/pe_architecture_overview.html
