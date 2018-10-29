@@ -1,6 +1,13 @@
 # baremetal-provisioning
 Trying to build a controller on a Bare metal setting
 
+### Alternatives
+* [Coobler](http://cobbler.github.io/manuals/quickstart/)
+* [RackHD](https://github.com/rackhd/rackhd) [another](https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
+* [xCat](http://xcat.org/)
+* [*Several*](https://devops.com/flap-part-1-server-provisioning/)
+* [*More*](https://www.cyberciti.biz/tips/server-provisioning-software.html)
+
 # Foreman
 
 This toturial is a test enviroment setup with two VMs one will run the puppet server the other one will be used to install an OS using razor. 
@@ -11,10 +18,7 @@ This toturial is a test enviroment setup with two VMs one will run the puppet se
 4. ... [instalation guide](https://www.theforeman.org/introduction.html)
 5. Change /etc/hosts and replace 127.0.0.1 for the real IP: 1.2.3.4 foreman.lasige.di.fc.ul.pt (full domain if needed). 
 In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hostname -f)```
-
-Follow these instructions: 
-
-admin / qKSHepQom85rTgFg
+6. Output from installer not used yet: admin / qKSHepQom85rTgFg 
 
 
 ### supported OSes (guests)
@@ -34,15 +38,16 @@ admin / qKSHepQom85rTgFg
 ## install 
 
 
-# Alternatives
-* [Coobler](http://cobbler.github.io/manuals/quickstart/)
-* [RackHD](https://github.com/rackhd/rackhd)[another](https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
-* [xCat](http://xcat.org/)
+#Razor
+# CentoOS
+1. Donwload [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso)
 
 
-# *BELOW IS DEPRECATED*
 
-# Install
+
+
+## Ubuntu
+#### Install
 1. Donwload Puppet Enterprise for your distribution [here](https://puppet.com/download-puppet-enterprise):
 
 ```$ wget -O puppet-enterprise-2019.0.0-ubuntu-18.04-amd64.tar.gz "https://pm.puppet.com/cgi-bin/download.cgi?arch=amd64&dist=ubuntu&rel=18.04&ver=latest"```
