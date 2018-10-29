@@ -10,7 +10,9 @@ Trying to build a controller on a Bare metal setting
 
 # Razor
 ## CentoOS
-1. Donwload [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso)
+1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso)
+2. Download [Puppet Enterprise](https://puppet.com/download-puppet-enterprise/thank-you) (need regist)
+3. Installing [Puppet Enterprise](https://puppet.com/docs/pe/2019.0/install_pe_getting_started.html#install-puppet-enterprise-quick-start-guide)
 
 ## Ubuntu
 #### Install
