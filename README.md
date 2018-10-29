@@ -9,7 +9,7 @@ Trying to build a controller on a Bare metal setting
 * [*More*](https://www.cyberciti.biz/tips/server-provisioning-software.html)
 
 # Razor
-# CentoOS
+## CentoOS
 1. Donwload [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso)
 
 ## Ubuntu
