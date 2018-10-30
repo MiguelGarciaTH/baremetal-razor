@@ -21,7 +21,9 @@ Trying to build a controller on a Bare metal setting
 	* ```wget -O puppet-enterprise-2019.0.0-el-7-x86_64.tar.gz "https://pm.puppet.com/cgi-bin/download.cgi?arch=x86_64&dist=el&rel=7&ver=latest"```
 4. Installing [Puppet Enterprise](https://puppet.com/docs/pe/2019.0/install_pe_getting_started.html#install-puppet-enterprise-quick-start-guide)
 5. After the installation go to the https://localhost.localdomain:3000 and continue the installation.
-6. At the end of the installation go to https://localhost.localdomain/auth/login?redirect=/
+6. Add a DNS entry for puppet ```sudo nano /etc/hotsts/``` in the end of the line of 127.0.0.1
+7. At the end of the installation go to https://localhost.localdomain/auth/login?redirect=/ (user default login: *admin*)
+	* Follow the instructions [here](https://puppet.com/docs/pe/2019.0/install_nix_agents_getting_started_guide.html#install-nix-agents-quick-start-guide)
 
 
 ## Ubuntu
