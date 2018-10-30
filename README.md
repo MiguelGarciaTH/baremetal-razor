@@ -12,9 +12,16 @@ Trying to build a controller on a Bare metal setting
 
 ## CentoOS
 1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
-2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs) .
+2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs).
+	* Update the machine ```$ sudo yum -y update```
+	* Install GCC ```sudo yum install gcc```
+	* Install alternative kernel to add Guest Additions: ```yum -y install kernel-devel.x86_64_0:3.10.0-862.el7``` (see which is suggested in the Guest Additions installer)
+	* [Change](https://www.thegeekdiary.com/centos-rhel-7-change-default-kernel-boot-with-old-kernel/) the default kernel on the grub menu ```grub2-set-default 1``` and restart
 3. Download [Puppet Enterprise](https://puppet.com/download-puppet-enterprise/thank-you) (need registration)
+	* ```wget -O puppet-enterprise-2019.0.0-el-7-x86_64.tar.gz "https://pm.puppet.com/cgi-bin/download.cgi?arch=x86_64&dist=el&rel=7&ver=latest"```
 4. Installing [Puppet Enterprise](https://puppet.com/docs/pe/2019.0/install_pe_getting_started.html#install-puppet-enterprise-quick-start-guide)
+5. After the installation go to the https://localhost.localdomain:3000 and continue the installation.
+6. At the end of the installation go to https://localhost.localdomain/auth/login?redirect=/
 
 
 ## Ubuntu
