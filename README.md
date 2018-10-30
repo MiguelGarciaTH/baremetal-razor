@@ -5,15 +5,15 @@ Trying to build a controller on a Bare metal setting
 * [Coobler](http://cobbler.github.io/manuals/quickstart/)
 * [RackHD](https://github.com/rackhd/rackhd) [another](https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
 * [xCat](http://xcat.org/)
-* [*Several*](https://devops.com/flap-part-1-server-provisioning/)
-* [*More*](https://www.cyberciti.biz/tips/server-provisioning-software.html)
+* [*More*](https://devops.com/flap-part-1-server-provisioning/) and [*some more*](https://www.cyberciti.biz/tips/server-provisioning-software.html)
+
 
 # Razor
 
 ## CentoOS
 1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
-2. Create VM with more than 10GB at least.
-3. Download [Puppet Enterprise](https://puppet.com/download-puppet-enterprise/thank-you) (need regist)
+2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs) .
+3. Download [Puppet Enterprise](https://puppet.com/download-puppet-enterprise/thank-you) (need registration)
 4. Installing [Puppet Enterprise](https://puppet.com/docs/pe/2019.0/install_pe_getting_started.html#install-puppet-enterprise-quick-start-guide)
 
 
