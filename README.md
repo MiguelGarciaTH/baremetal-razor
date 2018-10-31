@@ -30,6 +30,9 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/a/234334) like [this](https://stackoverflow.com/a/18664239/5077205) (change md5 to turst)
 2. **Razor Server Setup:** Follow the comands 
 3. **Donwload Microkernel:** ```wget -O microkernel-008.tar "http://pup.pt/razor-microkernel-latest"``` and extract  ```tar -xf microkernel-008.tar```
+4. **Razor Client Setup:** add razor to ```/etc/hosts/```
+5. **PXE Setup:**
+	*
 
 
 
