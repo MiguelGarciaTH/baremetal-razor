@@ -9,7 +9,7 @@ Below are some solutions that should help:
 
 So far, Razor is the one with best results. 
 It seems simples and it integrates with Puppet.
-Before continuing see this [video](https://www.youtube.com/watch?v=cR1bOg0IU5U) at a Puppet conference. 
+Before continuing, see this [video](https://www.youtube.com/watch?v=cR1bOg0IU5U) at a Puppet conference. 
 It is the best video to explain what it is and how it works. 
 
 # Razor
@@ -29,6 +29,7 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	* Run [these](https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/) instructions to create users and DBs
 	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/a/234334) like [this](https://stackoverflow.com/a/18664239/5077205) (change md5 to turst)
 2. **Razor Server Setup:** Follow the comands 
+3. **Donwload Microkernel:** ```wget -O microkernel-008.tar "http://pup.pt/razor-microkernel-latest"``` and extract  ```tar -xf microkernel-008.tar```
 
 
 
