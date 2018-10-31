@@ -23,9 +23,10 @@ It is the best video to explain what it is and how it works.
 	* [Change](https://www.thegeekdiary.com/centos-rhel-7-change-default-kernel-boot-with-old-kernel/) the default kernel on the grub menu ```grub2-set-default 0``` and restart
 
 ## Installing Razor [here](https://github.com/puppetlabs/razor-server/wiki/Installation)
-1. Install PostgresSQL ```sudo yum install postgresql-server postgresql-contrib```
+1. **Database Setup:** Install PostgresSQL ```sudo yum install postgresql-server postgresql-contrib```
 	* Run [these](https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/) instructions to create users and DBs
-	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/questions/234311/couldnt-find-postgresql-conf-pg-hba-conf-files-in-my-postgresql-installation) like [this](https://stackoverflow.com/a/18664239/5077205)
+	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/a/234334) like [this](https://stackoverflow.com/a/18664239/5077205) (change md5 to turst)
+2. **Razor Server Setup:** Follow the comands 
 
 
 
