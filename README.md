@@ -25,8 +25,7 @@ It is the best video to explain what it is and how it works.
 ## Installing Razor [here](https://github.com/puppetlabs/razor-server/wiki/Installation)
 1. Install PostgresSQL ```sudo yum install postgresql-server postgresql-contrib```
 	* Run [these](https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/) instructions to create users and DBs
-	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/questions/234311/couldnt-find-postgresql-conf-pg-hba-conf-files-in-my-postgresql-installation)
-	* Run [these](https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge) to allow login with Razor user
+	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/questions/234311/couldnt-find-postgresql-conf-pg-hba-conf-files-in-my-postgresql-installation) like [this](https://stackoverflow.com/a/18664239/5077205)
 
 
 
