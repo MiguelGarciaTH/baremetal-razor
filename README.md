@@ -10,7 +10,10 @@ Trying to build a controller on a Bare metal setting
 
 # Razor
 
-## CentoOS
+## CentoOS (via [github](https://github.com/puppetlabs/razor-server))
+
+
+## CentoOS (2)
 1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
 2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs).
 	* Update the machine ```$ sudo yum -y update```
@@ -24,6 +27,9 @@ Trying to build a controller on a Bare metal setting
 6. Add a DNS entry for puppet ```sudo nano /etc/hotsts/``` in the end of the line of 127.0.0.1
 7. At the end of the installation go to https://localhost.localdomain/auth/login?redirect=/ (user default login: *admin*)
 	* Follow the instructions [here](https://puppet.com/docs/pe/2019.0/install_nix_agents_getting_started_guide.html#install-nix-agents-quick-start-guide)
+	* Then, run  ```sudo /opt/puppetlabs/bin/puppet agent -t```
+8. Following this https://puppet.com/docs/pe/2019.0/installing_razor.html -- however, I am not sure that this works... 
+
 
 
 ## Ubuntu
