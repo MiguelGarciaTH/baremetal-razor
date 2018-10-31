@@ -14,7 +14,7 @@ It is the best video to explain what it is and how it works.
 
 # Razor
 I have followed the Razor's github [instructions](https://github.com/puppetlabs/razor-server)
-
+*always run ```$service razor-server start after restart```*
 ## Prepare the test envirorment
 1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
 2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs).
@@ -32,7 +32,13 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 3. **Donwload Microkernel:** ```wget -O microkernel-008.tar "http://pup.pt/razor-microkernel-latest"``` and extract  ```tar -xf microkernel-008.tar```
 4. **Razor Client Setup:** add razor to ```/etc/hosts/```
 5. **PXE Setup:**
-	*
+	*```sudo yum -y install tftp-server.x86_64```
+	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/))
+	* Additional [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html)
+
+
+
+
 
 
 
