@@ -1,12 +1,16 @@
 # baremetal-provisioning
-Trying to build a controller on a Bare metal setting
 
-### Alternatives
+I am trying to build a heteregenous replicated system using baremetal provision. 
+Below are some solutions that should help:
 * [Coobler](http://cobbler.github.io/manuals/quickstart/)
 * [RackHD](https://github.com/rackhd/rackhd) [another](https://rackhd.readthedocs.io/en/latest/rackhd_overview.html)
 * [xCat](http://xcat.org/)
 * [*More*](https://devops.com/flap-part-1-server-provisioning/) and [*some more*](https://www.cyberciti.biz/tips/server-provisioning-software.html)
 
+So far, Razor is the one with best results. 
+It seems simples and it integrates with Puppet.
+Before continuing see this [video](https://www.youtube.com/watch?v=cR1bOg0IU5U) at a Puppet conference. 
+It is the best video to explain what it is and how it works. 
 
 # Razor
 
