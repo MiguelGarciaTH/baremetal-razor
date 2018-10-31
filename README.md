@@ -12,7 +12,8 @@ It seems simples and it integrates with Puppet.
 Before continuing see this [video](https://www.youtube.com/watch?v=cR1bOg0IU5U) at a Puppet conference. 
 It is the best video to explain what it is and how it works. 
 
-# Razor (via [github](https://github.com/puppetlabs/razor-server))
+# Razor
+I have followed the Razor's github [instructions](https://github.com/puppetlabs/razor-server)
 
 ## Prepare the test envirorment
 1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
@@ -22,7 +23,8 @@ It is the best video to explain what it is and how it works.
 	* Install alternative kernel to add Guest Additions: ```yum -y install kernel-devel.x86_64_0:3.10.0-862.el7``` (see which is suggested in the Guest Additions installer)
 	* [Change](https://www.thegeekdiary.com/centos-rhel-7-change-default-kernel-boot-with-old-kernel/) the default kernel on the grub menu ```grub2-set-default 0``` and restart
 
-## Installing Razor [here](https://github.com/puppetlabs/razor-server/wiki/Installation)
+## Installing Razor
+Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/Installation) with the additonal commands below:
 1. **Database Setup:** Install PostgresSQL ```sudo yum install postgresql-server postgresql-contrib```
 	* Run [these](https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/) instructions to create users and DBs
 	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/a/234334) like [this](https://stackoverflow.com/a/18664239/5077205) (change md5 to turst)
