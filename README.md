@@ -12,12 +12,25 @@ It seems simples and it integrates with Puppet.
 Before continuing see this [video](https://www.youtube.com/watch?v=cR1bOg0IU5U) at a Puppet conference. 
 It is the best video to explain what it is and how it works. 
 
-# Razor
+# Razor (via [github](https://github.com/puppetlabs/razor-server))
 
-## CentoOS (via [github](https://github.com/puppetlabs/razor-server))
+## Prepare the test envirorment
+1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
+2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs).
+	* Update the machine ```$ sudo yum -y update```
+	* Install GCC ```sudo yum install gcc```
+	* Install alternative kernel to add Guest Additions: ```yum -y install kernel-devel.x86_64_0:3.10.0-862.el7``` (see which is suggested in the Guest Additions installer)
+	* [Change](https://www.thegeekdiary.com/centos-rhel-7-change-default-kernel-boot-with-old-kernel/) the default kernel on the grub menu ```grub2-set-default 0``` and restart
+
+## Installing Razor [here](https://github.com/puppetlabs/razor-server/wiki/Installation)
+1. Install PostgresSQL ```sudo yum install postgresql-server postgresql-contrib```
+	* Run [these](https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/) instructions to create users and DBs
+	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/questions/234311/couldnt-find-postgresql-conf-pg-hba-conf-files-in-my-postgresql-installation)
+	* Run [these](https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge) to allow login with Razor user
 
 
-## CentoOS (2)
+
+## (DEPRECATED) CentoOS (2)
 1. Donwload CentOS [image](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) 
 2. Create VM (at least: 50GB disk size, 1GB RAM, and 2 CPUs).
 	* Update the machine ```$ sudo yum -y update```
