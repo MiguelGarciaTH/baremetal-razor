@@ -35,7 +35,7 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	*```sudo yum -y install tftp-server.x86_64```
 	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/))
 	* Additional [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html)
-
+	* Some videos just for VMs: [part1](https://www.youtube.com/watch?v=eULIwoS6aP0) [part2](https://www.youtube.com/watch?v=tawXXVjVOrU)
 
 
 
