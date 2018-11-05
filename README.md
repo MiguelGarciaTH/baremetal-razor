@@ -33,7 +33,12 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 4. **Razor Client Setup:** add razor to ```/etc/hosts/```
 5. **PXE Setup:**
 	*```sudo yum -y install tftp-server.x86_64```
-	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/))
+	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/)
+
+		```sudo nano /etc/dhcp/dhcpd.conf```
+		```sudo systemctl restart dhcpd.service```
+		```journalctl -xe```
+
 	* Additional [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html)
 	* Some videos just for VMs: [part1](https://www.youtube.com/watch?v=eULIwoS6aP0) [part2](https://www.youtube.com/watch?v=tawXXVjVOrU)
 
