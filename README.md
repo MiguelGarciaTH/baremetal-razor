@@ -34,17 +34,16 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 5. **PXE Setup:**
 	*```sudo yum -y install tftp-server.x86_64```
 	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/):
+	* http://razor:8150/api/microkernel/bootstrap?nic_max=4
 
 		```sudo nano /etc/dhcp/dhcpd.conf```
 
 		```sudo systemctl restart dhcpd.service```
 
-		```journalctl -xe```
+		```journalctl -xe``` or  ```sudo systemctl status -l dhcpd```
 
 	* Additional [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html)
-	* Some videos just for VMs: [part1](https://www.youtube.com/watch?v=eULIwoS6aP0) [part2](https://www.youtube.com/watch?v=tawXXVjVOrU)
-
-	* IP NAO SOBE BEM o problema pode estar aí 
+	* Install VirtualBox extensions on the HOST ([donwload here](https://www.virtualbox.org/wiki/Downloads]) - [this](https://linuxacademy.com/community/posts/show/topic/7812-pxe-server-problem) problem take me a while to figure it out.
 
 ## Helpful links
 [PostgrestSQL user commands](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2)
