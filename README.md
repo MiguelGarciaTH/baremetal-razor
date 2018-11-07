@@ -45,6 +45,10 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	* Additional [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html)
 	* Install VirtualBox extensions on the HOST ([donwload here](https://www.virtualbox.org/wiki/Downloads])) - [this](https://linuxacademy.com/community/posts/show/topic/7812-pxe-server-problem) problem take me a while to figure it out.
 	* Needed to add the MAC to arp ? ``` sudo arp -s <IP> <MAC> -i <INTERFACE>```
+	* Then remove some rules from iptables (they are not persisted):  ```sudo iptables -D INPUT -j REJECT --reject-with icmp-host-prohibited``` (this tip was taken from [here](https://openstack.nimeyo.com/88925/openstack-neutron-icmp-host-unreachable-admin-prohibited))
+
+### Aditional commands:
+Turn off firewall ```sudo systemctl disable firewalld```
 
 ## Helpful links
 [PostgrestSQL user commands](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2)
