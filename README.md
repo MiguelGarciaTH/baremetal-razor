@@ -43,7 +43,8 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 		```journalctl -xe``` or  ```sudo systemctl status -l dhcpd```
 
 	* Additional [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html)
-	* Install VirtualBox extensions on the HOST ([donwload here](https://www.virtualbox.org/wiki/Downloads]) - [this](https://linuxacademy.com/community/posts/show/topic/7812-pxe-server-problem) problem take me a while to figure it out.
+	* Install VirtualBox extensions on the HOST ([donwload here](https://www.virtualbox.org/wiki/Downloads])) - [this](https://linuxacademy.com/community/posts/show/topic/7812-pxe-server-problem) problem take me a while to figure it out.
+	* Needed to add the MAC to arp ? ``` sudo arp -s <IP> <MAC> -i <INTERFACE>```
 
 ## Helpful links
 [PostgrestSQL user commands](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2)
