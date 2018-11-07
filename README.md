@@ -32,13 +32,12 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 3. **Donwload Microkernel:** ```wget -O microkernel-008.tar "http://pup.pt/razor-microkernel-latest"``` and extract  ```tar -xf microkernel-008.tar```
 4. **Razor Client Setup:** add razor to ```/etc/hosts/```
 5. **PXE Setup:**
-	*```sudo yum -y install tftp-server.x86_64```
+	* ```sudo yum -y install tftp-server.x86_64```
 	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/). Additional relevant [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html):
 		* The url is: *http://razor:8150/api/microkernel/bootstrap?nic_max=4*
 		* ```sudo nano /etc/dhcp/dhcpd.conf```
 		* ```sudo systemctl restart dhcpd.service```
 		* ```journalctl -xe``` or  ```sudo systemctl status -l dhcpd```
-
 	* Install VirtualBox extensions on the HOST ([donwload here](https://www.virtualbox.org/wiki/Downloads])) - [this](https://linuxacademy.com/community/posts/show/topic/7812-pxe-server-problem) problem take me a while to figure it out.
 	* Needed to add the MAC to arp ? ``` sudo arp -s <IP> <MAC> -i <INTERFACE>```
 	* Then remove some rules from iptables (they are not persisted):  ```sudo iptables -D INPUT -j REJECT --reject-with icmp-host-prohibited``` (this tip was taken from [here](https://openstack.nimeyo.com/88925/openstack-neutron-icmp-host-unreachable-admin-prohibited))
