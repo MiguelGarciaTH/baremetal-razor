@@ -33,7 +33,7 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 4. **Razor Client Setup:** add razor to ```/etc/hosts/```
 5. **PXE Setup:**
 	* ```sudo yum -y install tftp-server.x86_64```
-	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-in-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/). Additional relevant [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html):
+	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-i21392139n-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/). Additional relevant [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html):
 		* The url is: *http://razor:8150/api/microkernel/bootstrap?nic_max=4*
 		* ```sudo nano /etc/dhcp/dhcpd.conf```
 		* ```sudo systemctl restart dhcpd.service```
@@ -42,8 +42,18 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	* Needed to add the MAC to arp ? ``` sudo arp -s <IP> <MAC> -i <INTERFACE>```
 	* Then remove some rules from iptables (they are not persisted):  ```sudo iptables -D INPUT -j REJECT --reject-with icmp-host-prohibited``` (this tip was taken from [here](https://openstack.nimeyo.com/88925/openstack-neutron-icmp-host-unreachable-admin-prohibited))
 
+* ```sudo systemctl restart dnsmasq.service```
+* ```sudo systemctl restart dhcpd.service```
+* ```sudo service razor-server start```
+
+
 ### Aditional commands:
 Turn off firewall ```sudo systemctl disable firewalld```
+
+### Current state:
+Loaded the pxe bootstrap scritp, connected to razor but it says the file is too large.
+
+
 
 ## Helpful links
 [PostgrestSQL user commands](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2)
