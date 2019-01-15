@@ -30,6 +30,7 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	* Change the permissions on Postgres [config file](https://unix.stackexchange.com/a/234334) like [this](https://stackoverflow.com/a/18664239/5077205) (change md5 to trust)
 2. **Razor Server Setup:** Follow the comands 
 3. **Donwload Microkernel:** ```wget -O microkernel-008.tar "http://pup.pt/razor-microkernel-latest"``` and extract  ```tar -xf microkernel-008.tar```
+	* ```sudo nano /etc/puppetlabs/razor-server/config.yam``` edit repo path
 4. **Razor Client Setup:** add razor to ```/etc/hosts/```
 5. **PXE Setup:**
 	* ```sudo yum -y install tftp-server.x86_64```
@@ -45,6 +46,9 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 * ```sudo systemctl restart dnsmasq.service```
 * ```sudo systemctl restart dhcpd.service```
 * ```sudo service razor-server start```
+* ```sudo setenforce 0``` Disable SE Linux temporarly [more info](https://linuxize.com/post/how-to-disable-selinux-on-centos-7/)
+
+## [Probably the best site with step by step](https://sites.google.com/site/mrxpalmeiras/puppet/razor-provisioning)
 
 
 ### Aditional commands:
