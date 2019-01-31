@@ -61,36 +61,4 @@ Loaded the pxe bootstrap scritp, connected to razor but it says the file is too 
 
 
 
-## Helpful links
-[PostgrestSQL user commands](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2)
-
-# Foreman
-
-This toturial is a test enviroment setup with two VMs one will run the puppet server the other one will be used to install an OS using razor. 
-
-1. Download [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
-2. Download your favorite Linux 
-3. Configure the OS in the VM it needs 4GB ram
-4. ... [instalation guide](https://www.theforeman.org/introduction.html)
-5. Change /etc/hosts and replace 127.0.0.1 for the real IP: 1.2.3.4 foreman.lasige.di.fc.ul.pt (full domain if needed). 
-In the end the output of ```facter fqdn``` needs to be the same as ```ping $(hostname -f)```
-6. Output from installer not used yet: admin / qKSHepQom85rTgFg 
-
-
-### supported OSes (guests)
-* Red Hat Enterprise Linux 
-* CentOS
-* Fedora
-* Ubuntu
-* Debian
-* Solaris 8, 10
-* OpenSUSE  
-* SLES 
-* Oracle Linux
-* CoreOS
-* FreeBSD
-* Junos
-
-## install 
-
 
