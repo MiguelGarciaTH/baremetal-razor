@@ -33,8 +33,9 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 	* ```sudo nano /etc/puppetlabs/razor-server/config.yam``` edit repo path
 4. **Razor Client Setup:** add razor to ```/etc/hosts/```
 5. **PXE Setup:**
+	* Change PXE if needed, [VMWare configuration](http://ipxe.org/howto/vmware) -- dowload Zdlib to build roms.
 	* ```sudo yum -y install tftp-server.x86_64```
-	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-i21392139n-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/). Additional relevant [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html):
+	* Configure DHCP ([follow the instructions](https://www.tecmint.com/install-dhcp-server-i21392139n-centos-rhel-fedora/)) DHCP [commands](https://www.cyberciti.biz/faq/starting-stopping-restarting-dhcpd-in-fedora-linux/). **Additional relevant** [info](https://technodrone.blogspot.com/2013/11/razor-dhcp-and-tftp.html):
 		* The url is: *http://razor:8150/api/microkernel/bootstrap?nic_max=4*
 		* ```sudo nano /etc/dhcp/dhcpd.conf```
 		* ```sudo systemctl restart dhcpd.service```
@@ -47,6 +48,7 @@ Follow the instuctions [here](https://github.com/puppetlabs/razor-server/wiki/In
 * ```sudo systemctl restart dhcpd.service```
 * ```sudo service razor-server start```
 * ```sudo setenforce 0``` Disable SE Linux temporarly [more info](https://linuxize.com/post/how-to-disable-selinux-on-centos-7/)
+* Not sure about permissions and restarts. Sometimes a different combination may lead to a different result. 
 
 ## [Probably the best site with step by step](https://sites.google.com/site/mrxpalmeiras/puppet/razor-provisioning)
 
